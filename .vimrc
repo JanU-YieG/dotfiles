@@ -37,6 +37,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'godlygeek/tabular'
+Plug 'honza/vim-snippets'
 " Plug 'plasticboy/vim-markdown'
 " Plug 'junegunn/limelight.vim'
 "主题
