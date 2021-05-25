@@ -123,4 +123,5 @@ alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 #alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 alias unproxy='unset all_proxy'
 eval "$(navi widget zsh)"
+# "ant""anxiouscat""bat""bat2""behindcat""bigcat""buffalo""cat""chicken""chuck""clippy""cow""daemon""duck""duckling""egret""endlesshorse""facecat""fish""frog" "ghost""grumpycat""hypnotoad""longcat""longtailcat""monkey""mushroom""owl""pig""poop""pumpkin""rabbit""shark""shortcat""signbunny""smallcat""snowman""spider""squirrel""squirrel2""stretchycat""trilobite""turkey""yoda""tux"
 cowsay -f tux $(whatis $(ls /usr/share/man/man1 |  shuf -n 1 | cut -d. -f1) 2>/dev/null | shuf -n 1)
