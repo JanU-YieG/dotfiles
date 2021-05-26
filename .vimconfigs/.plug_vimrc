@@ -12,6 +12,10 @@ nmap <silent> <Leader>t <Plug>TranslateW
 " vmap <silent> <Leader>r <Plug>TranslateRV
 " Translate the text in clipboard
 " nmap <silent> <Leader>x <Plug>TranslateX
+nnoremap <silent><expr> <M-f> translator#window#float#has_scroll() ?
+                            \ translator#window#float#scroll(1) : "\<M-f>"
+nnoremap <silent><expr> <M-b> translator#window#float#has_scroll() ?
+                            \ translator#window#float#scroll(0) : "\<M-f>"
 "插件:limelight
 " autocmd! User GoyoEnter Limelight
 " autocmd! User GoyoLeave Limelight!
