@@ -1,7 +1,6 @@
 #/bin/bash
-if [ ! -d "$HOME/.vimconfigs" ]; then
-    mkdir $HOME/.vimconfigs
-fi
+[[ ! -d "$HOME/.vimconfigs" ]] && mkdir $HOME/.vimconfigs || echo ".vimconfigs exist!"
+[[ ! -d "$HOME/my-practices" ]] && mkdir $HOME/my-practices || echo "my-practices exist!"
 ln -sr ./.vimrc $HOME/.vimrc
 ln -sr ./.zshrc $HOME/.zshrc
 ln -sr ./.keynavrc $HOME/.keynavrc
