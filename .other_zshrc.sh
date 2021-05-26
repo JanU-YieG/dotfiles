@@ -1,7 +1,7 @@
 #/bin/bash
 
 ########## some aliases ##########
-
+# my-recent-study-book
 alias my-rsb="nohup evince /home/borer/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf &"
 alias tnew="tmux new -s"
 alias tto="tmux attach -t"
@@ -10,7 +10,7 @@ alias vim="gvim -v"
 alias ls="lsd"
 # alias yay="trizen"
 alias trans="trans :zh"
-alias my-test="cd $HOME/test-something"
+alias my-practices="cd $HOME/my-practices"
 alias my-rustlings="cd $HOME/rustlings"
 export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 alias proxy='export all_proxy=socks5://127.0.0.1:1080'
