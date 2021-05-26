@@ -1,5 +1,3 @@
-#/bin/bash
-
 ########## some aliases ##########
 # my-recent-study-book
 alias my-rsb="nohup evince /home/borer/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf &"
