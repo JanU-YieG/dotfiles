@@ -4,7 +4,7 @@ my linux profiles
 
 ## Preconditions
 
-*****The following software is installed**
+**The Following Software is installed**
 
 tmux,vim(gvim),zsh,oh-my-zsh,keynav
 
