@@ -39,7 +39,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'godlygeek/tabular'
 Plug 'honza/vim-snippets'
 Plug 'voldikss/vim-translator'
-Plug 'makerj/vim-pdf'
+Plug 'JanU-YieG/vim-pdf'
 " Plug 'plasticboy/vim-markdown'
 " Plug 'junegunn/limelight.vim'
 "主题
