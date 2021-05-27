@@ -1,4 +1,3 @@
-"---------插件配置-----------------
 "插件：translator
 " let g:translator_proxy_url = 'socks5://127.0.0.1:1080'
 " Echo translation in the cmdline
@@ -17,6 +16,9 @@ nnoremap <silent><expr> <M-f> translator#window#float#has_scroll() ?
                             \ translator#window#float#scroll(1) : "\<M-f>"
 nnoremap <silent><expr> <M-b> translator#window#float#has_scroll() ?
                             \ translator#window#float#scroll(0) : "\<M-f>"
+
+
+
 "插件:limelight
 " autocmd! User GoyoEnter Limelight
 " autocmd! User GoyoLeave Limelight!
@@ -40,6 +42,9 @@ nnoremap <silent><expr> <M-b> translator#window#float#has_scroll() ?
 " Highlighting priority (default: 10)
 "   Set it to -1 not to overrule hlsearch
 " let g:limelight_priority = -1
+
+
+
 "插件:'vim-airline/vim-airline'和'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1  " 支持 powerline 字体
 "选择airline显示的主题
@@ -58,6 +63,8 @@ endif
 " let g:airline_right_alt_sep = '❮'
 " let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
+
+
 
 "插件： 'scrooloose/nerdtree'
 " When writing a buffer (no delay).
@@ -87,6 +94,9 @@ let g:NERDTreeWinPos ="right"
 "let g:NERDTreeShowLineNumbers=1  " 是否显示行号
 "let g:NERDTreeHidden=0     "不显示隐藏文件
 
+
+
+
 "插件：scrooloose/nerdtree和Xuyuanp/nerdtree-git-plugin
 "显示忽略文件的状态
 " let g:NERDTreeShowIgnoredStatus = 1
@@ -103,12 +113,21 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+
+
+
 "插件：'easymotion/vim-easymotion'
 "默认<leader><leader>w向下查找，<leader><leader>b向上查找
 " 查找视区全部
 nmap ss <Plug>(easymotion-s2)
+
+
+
 "插件：'majutsushi/tagbar'
 noremap <leader>T :TagbarToggle<cr>
+
+
+
 "插件：'zivyangll/git-blame.vim'
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 "'junegunn/fzf' 'junegunn/fzf.vim'
@@ -120,8 +139,13 @@ autocmd VimEnter * command! -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+
+
 " 插件：'moll/vim-bbye'
 nnoremap <Leader>q :Bdelete<CR>
+
+
 
 "插件：mattn/vim-gist
 ":Gist发布到github以新的gist存储;:Gist -l列出当前用户所有公开的gist;Gist -b发布新的gist然后打开浏览器查看gist;Gist -f克隆到自己名下;Gist id将指定id(id就是git文件最后的域名)的gist载入到新缓冲区;Gist -P更新公开的gist;Gist -p更新私有的gist
@@ -130,16 +154,25 @@ nnoremap <Leader>q :Bdelete<CR>
 " let g:github_token
 "发布后打开浏览器
 " let g:gist_open_browser_after_post = 1
+
+
+
 "插件 fzf.vim
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
+
+
+
 "插件 vim-makrdown
 " let g:vim_markdown_folding_disable=1
 " let g:vim_markdown_no_default_key_mappings = 1
 " let g:vim_markdown_toc_autofit = 1
 " set conceallevel=2
 " let g:vim_markdown_conceal = 0
-" 插件 apzelos / blamer.nvim  用于直接显示代码某行是谁写的
+
+
+
+" 插件:apzelos / blamer.nvim  用于直接显示代码某行是谁写的
 " 启用该插件
 " let g:blamer_enabled = 1
 " 设置延迟时间：毫秒;设置太低将导致性能问题
@@ -154,20 +187,32 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 " let g:blamer_date_format = '%d/%m/%y %H:%M'
 " 设置显示颜色link Blamer Comment
 " highlight Blamer guifg=lightgrey
-" 主题插件Solarized 8配置
+
+
+
+" 插件:Solarized 8配置
 " 不使用终端的颜色等配置
 " set t_Co=16
-" 插件ayu主题
+
+
+
+" 插件:ayu主题
 " set termguicolors     " enable true colors support
 " let ayucolor=light  " for light version of theme
 " let ayucolor=mirage " for mirage version of theme
 " let ayucolor=dark   " for dark version of theme
-" rust.vim插件
+
+
+
+" 插件：rust.vim
 let g:rustfmt_autosave = 1 "使用rustfmt格式化代码
 " preservim/nerdcommenter插件
 " <leader>cc添加注释，<leader>cu取消注释,<leader>c<space>智能判断添加和取消注释
 let g:NERDSpaceDelims=1     " 注释后面自动加空格
-" 插件vim-lsp-settings配置
+
+
+
+" 插件:vim-lsp-settings配置
 " 设置语言servers存放目录默认为：$HOME/.local/share/vim-lsp-settings/servers
 " :LspInstallServer在编辑的文件执行，自动安装对应语言server
 " g:lsp_settings_servers_dir=////
