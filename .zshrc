@@ -104,8 +104,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# 交换ctrl和caps
-# /usr/bin/setxkbmap -option "ctrl:swapcaps"
-# 还原所有键设置
-/usr/bin/setxkbmap -option ""

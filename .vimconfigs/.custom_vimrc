@@ -142,6 +142,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" reload local file
+noremap <leader>e :e<CR>
 "手动生成标签配置
 "ctags--vim默认快捷键c-]跳到一个函数处(:tnext下一个匹配处，:tprevious上一个)，g-]列出所有函数
 "c-i返回上一个查看函数的地方，c-o返回上一次光标停留处,c-t返回先前调用处
