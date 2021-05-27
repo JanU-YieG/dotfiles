@@ -1,4 +1,3 @@
-
 "------------插件安装-------------------
 call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-startify'
