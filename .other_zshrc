@@ -4,7 +4,8 @@
 
 ########## some aliases ##########
 # my-recent-study-book
-alias my-rsb="vim /home/borer/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf"
+alias my-rsb="vim $HOME/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf"
+alias my-rustbook="vim $HOME/books-tools/it-books/The\ Rust\ Programming\ Language.pdf"
 alias tnew="tmux new -s"
 alias tto="tmux attach -t"
 alias vi="nvim"
