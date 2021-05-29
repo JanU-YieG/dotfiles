@@ -7,6 +7,7 @@ ln -sr ./.zshrc $HOME/.zshrc
 ln -sr ./.keynavrc $HOME/.keynavrc
 ln -sr ./.tmux.conf $HOME/.tmux.conf
 ln -sr ./.profile $HOME/.profile
+ln -sr ./.alacritty.yml $HOME/.alacritty.yml
 ln -sr ./.other_zshrc $HOME/.other_zshrc
 ln -sr ./.vimconfigs/.custom_vimrc $HOME/.vimconfigs/.custom_vimrc
 ln -sr ./.vimconfigs/.plug_vimrc $HOME/.vimconfigs/.plug_vimrc
