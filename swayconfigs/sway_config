@@ -23,6 +23,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show run
+# set $dmenu wofi --show run
 
 
 
@@ -107,8 +108,7 @@ output eDP-1 pos 1920 0 res 2560x1600
 
     # Start your launcher
     bindsym $mod+d exec $menu
-
-    # Drag floating windows by holding down $mod and left mouse button.
+# Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
@@ -208,6 +208,10 @@ output eDP-1 pos 1920 0 res 2560x1600
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
+# some of my binds
+    bindsym $mod+F11 exec sudo light -U 10
+    bindsym $mod+F12 exec sudo light -A 10
+    bindsym $mod+g exec goldendict
 #
 # Resizing containers:
 #
