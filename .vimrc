@@ -39,6 +39,7 @@ Plug 'godlygeek/tabular'
 Plug 'honza/vim-snippets'
 Plug 'voldikss/vim-translator'
 Plug 'JanU-YieG/vim-pdf'
+Plug 'kana/vim-fakeclip'
 " Plug 'plasticboy/vim-markdown'
 " Plug 'junegunn/limelight.vim'
 "主题
