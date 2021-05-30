@@ -7,7 +7,6 @@
 exec_always ./sway_run.sh
 
 
-
 ### Variables
 #
 # Logo key. Use Mod1 for Alt. Use Mode4 for wondows
@@ -30,8 +29,9 @@ set $menu wofi --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output eDP-1 scale 1.7
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output eDP-1 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output eDP-1 scale 2
 # output HDMI1 pos 0 0 res 1920x1080
 output eDP-1 pos 1920 0 res 2560x1600
 # set $laptop <eDP-1>

@@ -6,11 +6,6 @@
 # my-recent-study-book
 alias my-rsb="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf"
 alias my-rustbook="vim $HOME/git-repositories/books-tools/it-books/The\ Rust\ Programming\ Language.pdf"
-alias tnew="tmux new -s"
-alias tto="tmux attach -t"
-alias vi="nvim"
-alias vim="gvim -v"
-alias ls="lsd"
 # alias yay="trizen"
 # alias trans="trans :zh"
 alias my-practices="cd $HOME/my-practices"
