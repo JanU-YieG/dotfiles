@@ -18,6 +18,7 @@ ln -sr ./shell_bins/vimman.sh $HOME/bin/vimman
 #####sway######
 [[ ! -d "$HOME/.config/sway" ]] && mkdir $HOME/.config/sway|| echo ".config/sway exist!"
 ln -sr ./swayconfigs/sway_config $HOME/.config/sway/config
+ln -sr ./swayconfigs/sway_run.sh $HOME/.config/sway/sway_run.sh
 [[ ! -d "$HOME/.config/waybar" ]] && mkdir $HOME/.config/waybar || echo ".config/waybar exist!"
 ln -sr ./swayconfigs/waybarconfigs/config $HOME/.config/waybar/config
 ln -sr ./swayconfigs/waybarconfigs/style.css $HOME/.config/waybar/style.css
