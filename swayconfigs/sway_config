@@ -27,7 +27,6 @@ set $menu wofi --show run
 set $nautilus exec nautilus
 
 
-
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
