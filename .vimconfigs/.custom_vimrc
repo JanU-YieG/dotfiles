@@ -51,9 +51,9 @@ set cindent
 " 开启自动查找单词,输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
 set incsearch
 " 启动文件类型加载插件根据文件类型不同加载对应插件
-if has('autocmd')
-    filetype plugin indent on
-endif
+" if has('autocmd')
+    " filetype plugin indent on
+" endif
 " 启动vim时不显示介绍信息
 set shortmess+=I
 " 默认设置窗口标题
