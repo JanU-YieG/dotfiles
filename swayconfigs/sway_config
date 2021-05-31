@@ -187,8 +187,8 @@ output eDP-1 pos 0 1080 res 2560x1600
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+b split h
+    bindsym $mod+v split v
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
@@ -219,11 +219,28 @@ output eDP-1 pos 0 1080 res 2560x1600
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 # some of my binds
-    bindsym $mod+F11 exec sudo light -U 10
-    bindsym $mod+F12 exec sudo light -A 10
     bindsym $mod+g exec goldendict
+
+    # volume controls
+    # bindsym F3 exec 
+    # bindsym F2 exec pactl -- set-sink-volume 0 -5%
+    bindsym XF86AudioRaiseVolume exec pamixer -ui 2  #&& pamixer --get-volume
+    bindsym XF86AudioLowerVolume exec pamixer -ud 2 #&& pamixer --get-volume
+    bindsym XF86AudioMute exec pamixer --toggle-mute #&& ( pamixer --get-mute && echo 0 > $SWAYSOCK.wob ) || pamixer --get-volume > $SWAYSOCK.wob
+
+
+    # bindsym xf86audioplay exec playerctl play-pause
+    # bindsym xf86audionext exec playerctl next
+    # bindsym xf86audioprev exec playerctl previous
+    # bindsym xf86audiostop exec playerctl stop
+
+    # bindsym xf86battery exec swaylock -f -c "$accent"
+
+    bindsym xf86monbrightnessup exec sudo light -A 5 #&& light -g | cut -d'.' -f1 > /tmp/wobpipe
+    bindsym xf86monbrightnessdown exec sudo light -U 5 #&& light -g | cut -d'.' -f1 > /tmp/wobpipe
+
 #
-# Resizing containers:
+# resizing containers:
 #
 mode "resize" {
     # left will shrink the containers width
