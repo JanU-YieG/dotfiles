@@ -24,7 +24,7 @@ set $term alacritty
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show run
 # set $dmenu wofi --show run
-set $thunar exec thunar
+set $nautilus exec nautilus
 
 
 
@@ -43,6 +43,7 @@ output DP-2 bg $HOME/Pictures/k1/UDqYdWk-arch-linux-wallpaper.jpg fill
 output eDP-1 bg $HOME/Pictures/k2/728908.jpg  fill
 output eDP-1 scale 2
 output eDP-1 pos 0 1080 res 2560x1600
+# output eDP-1 pos 0 1080 res 32767x32767
 # set $laptop <eDP-1>
 # bindswitch --reload --locked lid:on output $laptop disable
 # bindswitch --reload --locked lid:off output $laptop enable
@@ -123,7 +124,7 @@ output eDP-1 pos 0 1080 res 2560x1600
     bindsym $mod+d exec $menu
 
     # Start your thunar
-    bindsym Mod4+e exec $thunar
+    bindsym Mod4+e exec $nautilus
 # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
