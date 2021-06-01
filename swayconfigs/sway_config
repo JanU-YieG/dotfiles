@@ -85,7 +85,7 @@ output eDP-1 pos 0 1080 res 2560x1600
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
     input type:keyboard {
-        xkb_options ctrl:swapcaps
+        # xkb_options ctrl:swapcaps
         # repeat_delay 250
         # repeat_rate 45
     }
