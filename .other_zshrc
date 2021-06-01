@@ -2,7 +2,7 @@
 # export MANPAGER='vimman'
 #####################################
 
-[[ $(command -v screenfetch ) ]] && screenfetch
+[[ $(command -v neofetch) ]] && neofetch
 ########## some aliases ##########
 # my-recent-study-book
 alias my-rsb="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf"
