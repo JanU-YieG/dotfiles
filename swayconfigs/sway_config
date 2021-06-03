@@ -54,7 +54,10 @@ output eDP-1 bg $HOME/Pictures/k2/728908.jpg  fill
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
+# workspaces definition
+workspace 1: Terminal output eDp-1
+workspace 2: Web output DP-2
+workspace 3: Music output DP-2
 
 
 ### Idle configuration
@@ -121,7 +124,7 @@ output eDP-1 bg $HOME/Pictures/k2/728908.jpg  fill
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    # bindsym $mod+d exec $menu
 
     # Start your thunar
     bindsym Mod4+e exec $nautilus
@@ -271,6 +274,10 @@ bindsym $mod+r mode "resize"
 
     bindsym xf86monbrightnessup exec sudo light -A 5 #&& light -g | cut -d'.' -f1 > /tmp/wobpipe
     bindsym xf86monbrightnessdown exec sudo light -U 5 #&& light -g | cut -d'.' -f1 > /tmp/wobpipe
+
+    bindsym $mod+m exec swaylock
+
+    bindsym $mod+d exec dmenu_run
 
 #
 # Status Bar:
