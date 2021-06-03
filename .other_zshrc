@@ -6,17 +6,22 @@
 #export XKB_DEFAULT_LAYOUT=fr
 #export XKB_DEFAULT_VARIANT=latin9
 #export XKB_DEFAULT_MODEL=pc105
-export QT_QPA_PLATFORM=xcb
-#export QT_QPA_PLATFORM=wayland
+# export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORM=wayland
 export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 export ELM_DISPLAY=wl
-#export ECORE_EVAS_ENGINE=wayland_shm
+export ECORE_EVAS_ENGINE=wayland_shm
 export MOZ_ENABLE_WAYLAND=1
-export QT_QPA_PLATFORMTHEME=qt5ct
-export AMD_DEBUG=nodma,nongg
-export RADV_DEBUG=nongg
-export RADV_PERFTEST=aco
+# export QT_QPA_PLATFORMTHEME=qt5ct
+# export AMD_DEBUG=nodma,nongg
+# export RADV_DEBUG=nongg
+# export RADV_PERFTEST=aco
 #export AMD_DEBUG=nodcc
+#
+#####fcitx######
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
 #####################################
 
 [[ $(command -v neofetch) ]] && neofetch

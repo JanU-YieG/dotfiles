@@ -89,7 +89,7 @@ output eDP-1 bg $HOME/Pictures/k2/728908.jpg  fill
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
     input type:keyboard {
-        # xkb_options ctrl:swapcaps
+        xkb_options ctrl:swapcaps
         # repeat_delay 250
         # repeat_rate 45
     }
@@ -277,7 +277,8 @@ bindsym $mod+r mode "resize"
 
     bindsym $mod+m exec swaylock
 
-    bindsym $mod+d exec dmenu_run
+    # bindsym $mod+d exec dmenu_run
+    bindsym $mod+d exec $menu
 
 #
 # Status Bar:
