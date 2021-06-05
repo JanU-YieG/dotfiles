@@ -31,8 +31,7 @@ alias my-rsb="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/abo
 alias my-rustbook="vim $HOME/git-repositories/books-tools/it-books/The\ Rust\ Programming\ Language.pdf"
 alias tnew="tmux new -s"
 alias tto="tmux attach -t"
-alias vi="nvim"
-alias vim="gvim -v"
+alias vim="nvim"
 alias ls="lsd"
 # alias yay="trizen"
 # alias trans="trans :zh"
@@ -59,7 +58,14 @@ eval "$(navi widget zsh)"
 # /usr/bin/setxkbmap -option ""
 
 ###############sway##############
-if [ "$(tty)" = "/dev/tty1" ]; then
-  exec sway
-  exit 0
+if [ "$(tty)" = "/dev/tty1" ] && [ "$USER" = "borer" ]; then
+    exec sway
+    exit 0
 fi
+
+##############xfce##############
+if [ "$(tty)" = "/dev/tty2" ] && [ "$USER" = "janu" ]; then
+    sudo lightdm
+    exit 0
+fi
+

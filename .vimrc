@@ -1,5 +1,5 @@
 "------------插件安装-------------------
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -48,7 +48,7 @@ Plug 'morhetz/gruvbox'
 Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
-source $HOME/.vimconfigs/.custom_vimrc
-source $HOME/.vimconfigs/.plug_vimrc
+source $HOME/.config/nvim/.custom_vimrc
+source $HOME/.config/nvim/.plug_vimrc
 " 控制透明--且要加在colorscheme后面
 hi Normal ctermfg=252 ctermbg=none

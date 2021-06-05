@@ -11,16 +11,22 @@ if [ ! -d "$HOME/bin" ]; then
 	mkdir $HOME/bin
 fi
 
-######vim tmux zsh :: configs#####
-ln -sr ./.vimrc $HOME/.vimrc
+######nvim tmux zsh :: configs#####
+# nvim
+ln -sr ./.vimrc $HOME/.config/nvim/init.vim
+ln -sr ./.nvimconfigs/.custom_vimrc $HOME/.config/nvim/.custom_vimrc
+ln -sr ./.nvimconfigs/.plug_vimrc $HOME/.config/nvim/.plug_vimrc
+ln -sr ./.nvimconfigs/.other_vimrc $HOME/.config/nvim/.other_vimrc
+# zsh
 ln -sr ./.zshrc $HOME/.zshrc
-ln -sr ./.keynavrc $HOME/.keynavrc
-ln -sr ./.tmux.conf $HOME/.tmux.conf
-ln -sr ./.profile $HOME/.profile
 ln -sr ./.other_zshrc $HOME/.other_zshrc
-ln -sr ./.vimconfigs/.custom_vimrc $HOME/.vimconfigs/.custom_vimrc
-ln -sr ./.vimconfigs/.plug_vimrc $HOME/.vimconfigs/.plug_vimrc
-ln -sr ./.vimconfigs/.other_vimrc $HOME/.vimconfigs/.other_vimrc
+# keynav
+ln -sr ./.keynavrc $HOME/.keynavrc
+# tmux
+ln -sr ./.tmux.conf $HOME/.tmux.conf
+# profile
+ln -sr ./.profile $HOME/.profile
+# others
 ln -sr ./shell_bins/vimman.sh $HOME/bin/vimman
 
 #####sway######
