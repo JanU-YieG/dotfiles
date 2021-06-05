@@ -50,6 +50,5 @@ call plug#end()
 
 source $HOME/.vimconfigs/.custom_vimrc
 source $HOME/.vimconfigs/.plug_vimrc
-
 " 控制透明--且要加在colorscheme后面
 hi Normal ctermfg=252 ctermbg=none

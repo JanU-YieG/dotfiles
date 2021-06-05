@@ -1,7 +1,15 @@
-#/bin/bash
-[[ ! -d "$HOME/.vimconfigs" ]] && mkdir $HOME/.vimconfigs || echo ".vimconfigs exist!"
-[[ ! -d "$HOME/my-practices" ]] && mkdir $HOME/my-practices || echo "my-practices exist!"
-[[ ! -d "$HOME/bin" ]] && mkdir $HOME/bin || echo "bin exist!"
+#/bin/sh
+if [ ! -d "$HOME/.vimconfigs" ]; then
+       	mkdir $HOME/.vimconfigs
+fi
+
+if [ ! -d "$HOME/my-practices" ]; then
+       	mkdir $HOME/my-practices
+fi
+
+if [ ! -d "$HOME/bin" ]; then
+	mkdir $HOME/bin
+fi
 
 ######vim tmux zsh :: configs#####
 ln -sr ./.vimrc $HOME/.vimrc
@@ -16,10 +24,15 @@ ln -sr ./.vimconfigs/.other_vimrc $HOME/.vimconfigs/.other_vimrc
 ln -sr ./shell_bins/vimman.sh $HOME/bin/vimman
 
 #####sway######
-[[ ! -d "$HOME/.config/sway" ]] && mkdir $HOME/.config/sway|| echo ".config/sway exist!"
+if [ ! -d "$HOME/.config/sway" ]; then
+	mkdir $HOME/.config/sway
+fi
 ln -sr ./swayconfigs/sway_config $HOME/.config/sway/config
 ln -sr ./swayconfigs/sway_run.sh $HOME/.config/sway/sway_run.sh
-[[ ! -d "$HOME/.config/waybar" ]] && mkdir $HOME/.config/waybar || echo ".config/waybar exist!"
+
+if [ ! -d "$HOME/.config/waybar" ]; then
+	mkdir $HOME/.config/waybar
+fi
 ln -sr ./swayconfigs/waybarconfigs/config $HOME/.config/waybar/config
 ln -sr ./swayconfigs/waybarconfigs/style.css $HOME/.config/waybar/style.css
 
