@@ -260,25 +260,21 @@ bindsym $mod+r mode "resize"
 
 
     # volume controls
-    # bindsym F2 exec pactl -- set-sink-volume 0 -5%
-    bindsym XF86AudioRaiseVolume exec pamixer -ui 2  #&& pamixer --get-volume
-    bindsym XF86AudioLowerVolume exec pamixer -ud 2 #&& pamixer --get-volume
-    bindsym XF86AudioMute exec pamixer --toggle-mute #&& ( pamixer --get-mute && echo 0 > $SWAYSOCK.wob ) || pamixer --get-volume > $SWAYSOCK.wob
-
-
-    # bindsym xf86audioplay exec playerctl play-pause
-    # bindsym xf86audionext exec playerctl next
-    # bindsym xf86audioprev exec playerctl previous
-    # bindsym xf86audiostop exec playerctl stop
-
-    # bindsym xf86battery exec swaylock -f -c "$accent"
-
-    bindsym xf86monbrightnessup exec sudo light -A 5 #&& light -g | cut -d'.' -f1 > /tmp/wobpipe
-    bindsym xf86monbrightnessdown exec sudo light -U 5 #&& light -g | cut -d'.' -f1 > /tmp/wobpipe
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+    bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioPlay exec playerctl play-pause
+    bindsym XF86Search exec bemenu-run
 
     bindsym $mod+m exec swaylock -c '000000'
 
-    bindsym $mod+d exec dmenu_run
+    bindsym $mod+d exec bemenu-run
     bindsym Mod4+s exec st
     # bindsym Mod4+x exec QT_QPA_PLATFORM=xcb flameshot gui
     # bindsym $mod+d exec $menu
@@ -300,8 +296,10 @@ bindsym $mod+r mode "resize"
         # inactive_workspace #32323200 #32323200 #5c5c5c
     # }
 # }
+#
 bar {
     swaybar_command waybar
+    # swaybar_command polybar
 }
 
 include /etc/sway/config.d/*
