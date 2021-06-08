@@ -1,6 +1,7 @@
 #/bin/sh
-if [ ! -d "$HOME/.vimconfigs" ]; then
-       	mkdir $HOME/.vimconfigs
+# nvim
+if [ ! -d "$HOME/.config/nvim/plugged" ]; then
+       	mkdir -p $HOME/.config/nvim/plugged
 fi
 
 if [ ! -d "$HOME/my-practices" ]; then
