@@ -1,5 +1,9 @@
 "------------插件安装-------------------
 call plug#begin('~/.config/nvim/plugged')
+" Plug 'neovim/nvim-lspconfig'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-surround'
+
 Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -12,7 +16,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'brooth/far.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'stanangeloff/php.vim'
 Plug 'majutsushi/tagbar'
 Plug 'lfv89/vim-interestingwords'
 Plug 'scrooloose/syntastic'

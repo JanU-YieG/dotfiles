@@ -263,3 +263,10 @@ augroup END
 " let g:asyncomplete_log_file = expand('~/asyncomplete.log')
 "
 let g:fakeclip_provide_clipboard_key_mappings = !empty($WAYLAND_DISPLAY)
+
+" Plug 'tpope/vim-surround'
+" cs,ds,yss
+
+" Plug 'godlygeek/tabular'
+let g:tabular_loaded = 1
+vnoremap <Leader>l :Tabularize /
