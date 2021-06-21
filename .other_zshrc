@@ -22,12 +22,17 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
+# export GTK_IM_MODULE DEFAULT=fcitx5
+# export QT_IM_MODULE DEFAULT=fcitx5
+# export XMODIFIERS DEFAULT=@im=fcitx5
 #####################################
 
 [[ $(command -v neofetch) ]] && neofetch
 ########## some aliases ##########
 # my-recent-study-book
 alias my-rsb="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf"
+alias my-rsb2="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/Learning\ the\ bash\ Shell,\ 3rd\ Edition.pdf"
+alias my-rsb3="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/Linux\ Basics\ for\ Hackers\ Getting\ Started\ with\ Networking,\ Scripting,\ and\ Security\ in\ Kali.pdf"
 alias my-rustbook="vim $HOME/git-repositories/books-tools/it-books/The\ Rust\ Programming\ Language.pdf"
 alias tnew="tmux new -s"
 alias tto="tmux attach -t"
@@ -56,8 +61,9 @@ eval "$(navi widget zsh)"
 # /usr/bin/setxkbmap -option "ctrl:swapcaps"
 # 还原所有键设置
 # /usr/bin/setxkbmap -option ""
-
+# exec nohup fcitx5 &
 ###############sway##############
+#export WAYLAND_DISPLAY=alacritty
 if [ "$(tty)" = "/dev/tty1" ] && [ "$USER" = "borer" ]; then
     exec sway
     exit 0
