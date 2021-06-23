@@ -280,6 +280,7 @@ bindsym $mod+r mode "resize"
     bindsym $mod+d exec bemenu-run
     bindsym Mod4+s exec st
     # bindsym Mod4+x exec QT_QPA_PLATFORM=xcb flameshot gui
+    # bindsym Mod4+x exec WAYLAND_DISPLAY=x11 flameshot gui
     # bindsym $mod+d exec $menu
 
 #
