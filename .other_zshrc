@@ -75,8 +75,8 @@ if [ "$(tty)" = "/dev/tty1" ] && [ "$USER" = "borer" ]; then
 fi
 
 ##############xfce##############
-if [ "$(tty)" = "/dev/tty2" ] && [ "$USER" = "janu" ]; then
-    sudo lightdm
-    exit 0
-fi
+# if [ "$(tty)" = "/dev/tty2" ] && [ "$USER" = "janu" ]; then
+    # sudo lightdm
+    # exit 0
+# fi
 
