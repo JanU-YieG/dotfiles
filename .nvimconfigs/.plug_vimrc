@@ -77,7 +77,7 @@ let NERDTreeAutoDeleteBuffer = 1  " Auto delete buffer deleted with NerdTree
 " 让目录显示到左边/右边
 let g:NERDTreeWinPos ="right"
 "Making it prettier
-" let NERDTreeMinimalUI = 1
+let NERDTreeMinimalUI = 1
 " let NERDTreeDirArrows = 1
 " autocmd vimenter * NERDTree  "自动开启Nerdtree
 "let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小
