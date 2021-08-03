@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 #exec_always ./sway_run.sh
-#exec --no-startup-id fcitx5 -r
+exec --no-startup-id fcitx5 -r
 
 
 ### Variables
