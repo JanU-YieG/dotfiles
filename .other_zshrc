@@ -11,7 +11,7 @@
 # export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 #export ELM_DISPLAY=wl
 # export ECORE_EVAS_ENGINE=wayland_shm
-# export MOZ_ENABLE_WAYLAND=1
+export MOZ_ENABLE_WAYLAND=1
 # export QT_QPA_PLATFORMTHEME=qt5ct
 # export AMD_DEBUG=nodma,nongg
 # export RADV_DEBUG=nongg
@@ -50,6 +50,7 @@ alias my-rustlings="cd $HOME/rustlings"
 export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH:/usr/local/go/bin"
 alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 alias unproxy='unset all_proxy'
+alias golearn='cd $HOME/gotest/golearn'
 
 #############################
 
@@ -74,7 +75,7 @@ fi
 # /usr/bin/setxkbmap -option ""
 # exec nohup fcitx5 &
 ###############sway##############
-export WAYLAND_DISPLAY=alacritty
+##export WAYLAND_DISPLAY=alacritty
 if [ "$(tty)" = "/dev/tty1" ] && [ "$USER" = "borer" ]; then
    exec sway
    exit 0

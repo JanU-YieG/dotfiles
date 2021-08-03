@@ -10,6 +10,10 @@ colorscheme gruvbox
 
 
 "-------vim基础配置-----
+" Easiest method is to do :set list, which will show tabs as ^I and end of line as $
+" set list
+" not show tabs as ^I and end of line as $
+set invlist
 " 显示行号
 set number
 " 显示当前行
@@ -43,9 +47,9 @@ set autoindent
 " 智能对齐
 set smartindent
 " 用space替代tab输入
-"set expandtab
+set expandtab
 " 不用space替代tab输入，默认如此
-"set noexpandtab
+" set noexpandtab
 " c语言格式对齐
 set cindent
 " 开启自动查找单词,输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
