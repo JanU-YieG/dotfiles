@@ -4,8 +4,8 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-exec_always ./sway_run.sh
-exec --no-startup-id fcitx5 -r
+#exec_always ./sway_run.sh
+#exec --no-startup-id fcitx5 -r
 
 
 ### Variables
@@ -41,12 +41,12 @@ output DP-2 scale 1
 # output DP-2 resolution 1920x1080 position 0,0
 output DP-2 resolution 3440x1440 position 0,0
 # output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output DP-2 bg $HOME/Pictures/k1/UDqYdWk-arch-linux-wallpaper.jpg fill
+output DP-2 bg $HOME/dotfiles/picture/jocker1.jpg fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
 output eDP-1 scale 2
 output eDP-1 resolution 2560x1600 position 3440,0
-output eDP-1 bg $HOME/Pictures/k2/728908.jpg  fill
+output eDP-1 bg $HOME/dotfiles/picture/hacker1.jpg  fill
 # output eDP-1 pos 0 1080 res 32767x32767
 # set $laptop <eDP-1>
 # bindswitch --reload --locked lid:on output $laptop disable
@@ -286,7 +286,8 @@ bindsym $mod+r mode "resize"
 
     bindsym $mod+m exec swaylock -c '000000'
 
-    bindsym $mod+d exec bemenu-run
+    # bindsym $mod+d exec bemenu-run
+    bindsym $mod+d exec rofi -show combi -combi-modi "window,run,ssh" -modi combi
     bindsym Mod4+s exec st
     # bindsym Mod4+x exec QT_QPA_PLATFORM=xcb flameshot gui
     # bindsym Mod4+x exec WAYLAND_DISPLAY=x11 flameshot gui
