@@ -10,7 +10,6 @@ colorscheme gruvbox
 
 
 "-------vim基础配置-----
-set invlist
 " 显示行号
 set number
 " 显示当前行
@@ -27,6 +26,12 @@ set ruler
 syntax enable
 " 允许用指定语法高亮替换默认
 " syntax on
+"如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
+" Easiest method is to do :set list, which will show tabs as »■ and end of line as ■
+set listchars=tab:»»,trail:■
+set list
+" not show tabs as »■ and end of line as ■
+" set invlist
 " 设置背景色
 set background=dark
 " set background=light
@@ -100,12 +105,6 @@ set undodir=~/.vim/.undo/
 "set autochdir
 "光标遇到圆括号、方括号、大括号时，自动高亮对应的另一个圆括号、方括号和大括号
 set showmatch
-"如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
-" Easiest method is to do :set list, which will show tabs as »■ and end of line as ■
-" set listchars=tab:»■,trail:■
-" set list
-" not show tabs as »■ and end of line as ■
-set invlist
 "指定折行处与编辑窗口的右边缘之间空出的字符数
 set wrapmargin=2
 " 避免粘贴代码乱格式
