@@ -28,7 +28,7 @@ syntax enable
 " syntax on
 "如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
 " Easiest method is to do :set list, which will show tabs as »■ and end of line as ■
-set listchars=tab:»»,trail:■
+set listchars=tab:▸·,trail:■
 set list
 " not show tabs as »■ and end of line as ■
 " set invlist
