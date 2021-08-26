@@ -6,6 +6,7 @@
 
 #exec_always ./sway_run.sh
 exec --no-startup-id fcitx5 -r
+# exec --no-startup-id keynav -r
 
 
 ### Variables
@@ -41,12 +42,14 @@ output DP-2 scale 1
 # output DP-2 resolution 1920x1080 position 0,0
 output DP-2 resolution 3440x1440 position 0,0
 # output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output DP-2 bg $HOME/dotfiles/picture/hacker1.jpg  fill
+# output DP-2 bg $HOME/dotfiles/picture/hacker1.jpg  fill
+output DP-2 bg $HOME/dotfiles/picture/rust-code.png  fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
 output eDP-1 scale 2
 output eDP-1 resolution 2560x1600 position 3440,0
-output eDP-1 bg $HOME/dotfiles/picture/hacker2.jpg fill
+# output eDP-1 bg $HOME/dotfiles/picture/hacker2.jpg fill
+output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
 # output eDP-1 pos 0 1080 res 32767x32767
 # set $laptop <eDP-1>
 # bindswitch --reload --locked lid:on output $laptop disable

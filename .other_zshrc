@@ -51,6 +51,8 @@ export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH:/usr/local/go/bin"
 alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 alias unproxy='unset all_proxy'
 alias golearn='cd $HOME/gotest/golearn'
+alias rustlearn='cd $HOME/rust'
+# export GOPATH='$HOME/gotest/'
 
 #############################
 

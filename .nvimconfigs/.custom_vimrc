@@ -24,6 +24,8 @@ set laststatus=2
 set ruler
 " 打开语法高亮显示
 syntax enable
+" Use the OS clipboard by default
+set clipboard=unnamedplus
 " 允许用指定语法高亮替换默认
 " syntax on
 "如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
@@ -133,6 +135,7 @@ set nofoldenable "启动vim时关闭折叠
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
+inoremap < <><LEFT>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 " save file
