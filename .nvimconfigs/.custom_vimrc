@@ -138,6 +138,7 @@ inoremap { {}<LEFT>
 inoremap < <><LEFT>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
+inoremap ` ``<LEFT>
 " save file
 nnoremap <leader>w :wa<CR>
 " Save a file as root (,W)

@@ -43,7 +43,7 @@ output DP-2 scale 1
 output DP-2 resolution 3440x1440 position 0,0
 # output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # output DP-2 bg $HOME/dotfiles/picture/hacker1.jpg  fill
-output DP-2 bg $HOME/dotfiles/picture/rust-code.png  fill
+output DP-2 bg $HOME/dotfiles/picture/rust-rust.png  fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
 output eDP-1 scale 2
