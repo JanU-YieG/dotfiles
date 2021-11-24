@@ -4,6 +4,10 @@ if [ ! -d "$HOME/.config/nvim/plugged" ]; then
        	mkdir -p $HOME/.config/nvim/plugged
 fi
 
+if [ ! -d "$HOME/.config/nvim/autoload" ]; then
+       	mkdir -p $HOME/.config/nvim/autoload
+fi
+
 if [ ! -d "$HOME/my-practices" ]; then
        	mkdir $HOME/my-practices
 fi
@@ -18,6 +22,7 @@ ln -sr ./.vimrc $HOME/.config/nvim/init.vim
 ln -sr ./.nvimconfigs/.custom_vimrc $HOME/.config/nvim/.custom_vimrc
 ln -sr ./.nvimconfigs/.plug_vimrc $HOME/.config/nvim/.plug_vimrc
 ln -sr ./.nvimconfigs/.other_vimrc $HOME/.config/nvim/.other_vimrc
+ln -sr ./.nvimconfigs/autoload/plug.vim $HOME/.config/nvim/autoload/plug.vim
 # zsh
 ln -sr ./.zshrc $HOME/.zshrc
 ln -sr ./.other_zshrc $HOME/.other_zshrc
