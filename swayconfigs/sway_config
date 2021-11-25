@@ -49,7 +49,7 @@ set $nautilus exec nautilus
 # output DP-2 bg $HOME/dotfiles/picture/01.jpg  fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
-output eDP-1 scale 1.7
+output eDP-1 scale 1
 # output eDP-1 resolution 2560x1600 position 3440,0
 output eDP-1 resolution 2560x1600 position 0,0
 # output eDP-1 bg $HOME/dotfiles/picture/hacker2.jpg fill
@@ -125,6 +125,15 @@ output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
     }
 
     input "7247:101:SIGMACHIP_Usb_Mouse" {
+        left_handed enabled
+        # tap enabled
+        natural_scroll enabled
+        dwt enabled
+        accel_profile "flat"
+        pointer_accel 0.5
+    }
+
+    input "10077:2982:USB_OPTICAL_MOUSE" {
         left_handed enabled
         # tap enabled
         natural_scroll enabled
