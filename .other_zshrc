@@ -9,6 +9,7 @@
 # export QT_QPA_PLATFORM=xcb
 # export QT_QPA_PLATFORM=wayland
 # export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
+WAYLAND_DISPLAY=wayland-1
 #export ELM_DISPLAY=wl
 # export ECORE_EVAS_ENGINE=wayland_shm
 export MOZ_ENABLE_WAYLAND=1
@@ -40,6 +41,7 @@ alias my-rsb2="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/ab
 alias my-rsb3="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/Linux\ Basics\ for\ Hackers\ Getting\ Started\ with\ Networking,\ Scripting,\ and\ Security\ in\ Kali.pdf"
 alias my-rustbook="vim $HOME/git-repositories/books-tools/it-books/The\ Rust\ Programming\ Language.pdf"
 alias juli-extend="cd $HOME/docker-run-env/Lnmp/www/juli-extend"
+alias juli="cd $HOME/docker-run-env/Lnmp/www/juli"
 alias tnew="tmux new -s"
 alias tto="tmux attach -t"
 alias vim="nvim"
@@ -56,6 +58,9 @@ alias unproxy='unset all_proxy'
 alias sail='vendor/bin/sail'
 alias golearn='cd $HOME/gotest/golearn'
 alias rustlearn='cd $HOME/rust'
+######alias command########
+# alias two_screen_xiaomi_alacritty="if [ -f $HOME/.alacritty.yml ];then rm $HOME/.alacritty.yml fi \n ln -sr $HOME/dotfiles/alacrittys/two_screen_xiaomi_alacritty.yml"
+# alias two_screen_xiaomi_alacritty=`rm $HOME/.alacritty.yml && ln -sr $HOME/dotfiles/alacrittys/two_screen_xiaomi_alacritty.yml`
 # export GOPATH='$HOME/gotest/'
 
 #############################

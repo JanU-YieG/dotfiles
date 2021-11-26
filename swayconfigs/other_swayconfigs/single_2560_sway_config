@@ -36,12 +36,12 @@ set $nautilus exec nautilus
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # chage the focus of montitor on sway launch
-focus output DP-2
+# focus output DP-2
 
-output DP-2 scale 1
+# output DP-2 scale 1
 # output DP-2 resolution 1920x1080 position 0,0
-output DP-2 resolution 3440x1440 position 0,0
-output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output DP-2 resolution 3440x1440 position 0,0
+# output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # output DP-2 bg $HOME/dotfiles/picture/hacker1.jpg  fill
 # output DP-2 bg $HOME/dotfiles/picture/jocker1.jpg  fill
 # output DP-2 bg $HOME/dotfiles/picture/architecture01.jpg  fill
@@ -49,7 +49,9 @@ output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fil
 # output DP-2 bg $HOME/dotfiles/picture/01.jpg  fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
-output eDP-1 scale 1.7
+
+focus output eDP-1
+output eDP-1 scale 1.8
 output eDP-1 resolution 2560x1600 position 3440,0
 # output eDP-1 resolution 2560x1600 position 0,0
 # output eDP-1 bg $HOME/dotfiles/picture/hacker2.jpg fill
