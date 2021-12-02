@@ -40,8 +40,8 @@ alias my-rsb="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/abo
 alias my-rsb2="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/Learning\ the\ bash\ Shell,\ 3rd\ Edition.pdf"
 alias my-rsb3="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/Linux\ Basics\ for\ Hackers\ Getting\ Started\ with\ Networking,\ Scripting,\ and\ Security\ in\ Kali.pdf"
 alias my-rustbook="vim $HOME/git-repositories/books-tools/it-books/The\ Rust\ Programming\ Language.pdf"
-alias juli-extend="cd $HOME/docker-run-env/Lnmp/www/juli-extend"
-alias juli="cd $HOME/docker-run-env/Lnmp/www/juli"
+alias juli-extend="cd $HOME/docker-run-env/app-images/lnmp/www/juli-extend"
+alias juli="cd $HOME/docker-run-env/app-images/lnmp/www/juli"
 alias tnew="tmux new -s"
 alias tto="tmux attach -t"
 alias vim="nvim"
@@ -55,7 +55,7 @@ alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 alias proxy_http='export http_proxy=http://127.0.0.1:1087'
 alias proxy_https='export https_proxy=http://127.0.0.1:1087'
 alias unproxy='unset all_proxy'
-alias sail='vendor/bin/sail'
+# alias sail='vendor/bin/sail'
 alias golearn='cd $HOME/gotest/golearn'
 alias rustlearn='cd $HOME/rust'
 ######alias command########

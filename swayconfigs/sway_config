@@ -38,7 +38,7 @@ set $nautilus exec nautilus
 # chage the focus of montitor on sway launch
 focus output DP-2
 
-output DP-2 scale 1
+output DP-2 scale 1.4
 # output DP-2 resolution 1920x1080 position 0,0
 output DP-2 resolution 3440x1440 position 0,0
 output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -49,7 +49,7 @@ output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fil
 # output DP-2 bg $HOME/dotfiles/picture/01.jpg  fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
-output eDP-1 scale 1.7
+output eDP-1 scale 1
 output eDP-1 resolution 2560x1600 position 3440,0
 # output eDP-1 resolution 2560x1600 position 0,0
 # output eDP-1 bg $HOME/dotfiles/picture/hacker2.jpg fill
@@ -101,7 +101,7 @@ output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
     input type:keyboard {
-        # xkb_options ctrl:swapcaps
+        xkb_options ctrl:swapcaps
         # repeat_delay 250
         # repeat_rate 45
     }
@@ -285,8 +285,10 @@ bindsym $mod+r mode "resize"
 # my bind keys
 #
     # some of my binds
-    bindsym ctrl+g exec QT_QPA_PLATFORM=xcb goldendict
-
+    # bindsym ctrl+g exec QT_QPA_PLATFORM=xcb goldendict --floating_mode
+    bindsym ctrl+g exec QT_QPA_PLATFORM=xcb goldendict @DEFAULT_SINK@  toggle
+    # for_window [name="About GoldenDict"] floating enable
+    # bindsym ctrl+g exec --init='mark A' goldendict
 
     # volume controls
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -332,5 +334,8 @@ bar {
     swaybar_command waybar
     # swaybar_command polybar
 }
-
+  # Auto float apps
+    # for_window [app_id="GoldenDict"] floating enable
+    for_window [class="^GoldenDict$"] floating enable
+    # for_window [title="Firefox - Sharing Indicator"] floating enable
 include /etc/sway/config.d/*
