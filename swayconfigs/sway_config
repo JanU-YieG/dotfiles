@@ -41,20 +41,22 @@ focus output DP-2
 output DP-2 scale 1.4
 # output DP-2 resolution 1920x1080 position 0,0
 output DP-2 resolution 3440x1440 position 0,0
-output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output DP-2 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # output DP-2 bg $HOME/dotfiles/picture/hacker1.jpg  fill
 # output DP-2 bg $HOME/dotfiles/picture/jocker1.jpg  fill
 # output DP-2 bg $HOME/dotfiles/picture/architecture01.jpg  fill
 # output DP-2 bg $HOME/dotfiles/picture/rust-rust.png  fill
-# output DP-2 bg $HOME/dotfiles/picture/01.jpg  fill
+output DP-2 bg $HOME/dotfiles/picture/01.jpg  fill
 
 # output eDP-1 bg $HOME/Pictures/k2/1776267.png  fill
 output eDP-1 scale 1
-output eDP-1 resolution 2560x1600 position 3440,0
-# output eDP-1 resolution 2560x1600 position 0,0
+# output eDP-1 resolution 2560x1600 position 3440,0
+# output eDP-1 resolution 1080x1600 position 3440,0
+output eDP-1 resolution 2560x1600 position 0,0
 # output eDP-1 bg $HOME/dotfiles/picture/hacker2.jpg fill
-output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
+# output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
 # output eDP-1 bg $HOME/dotfiles/picture/screen01.jpg fill
+output eDP-1 bg $HOME/dotfiles/picture/architecture01.jpg  fill
 # output eDP-1 pos 0 1080 res 32767x32767
 # set $laptop <eDP-1>
 # bindswitch --reload --locked lid:on output $laptop disable
@@ -105,7 +107,6 @@ output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
         # repeat_delay 250
         # repeat_rate 45
     }
-
     input "1267:12600:MSFT0001:00_04F3:3138_Touchpad" {
         left_handed enabled
         tap enabled
@@ -134,6 +135,15 @@ output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
     }
 
     input "10077:2982:USB_OPTICAL_MOUSE" {
+        left_handed enabled
+        # tap enabled
+        natural_scroll enabled
+        dwt enabled
+        accel_profile "flat"
+        pointer_accel 0.5
+    }
+
+    input "7119:5:USB_Optical_Mouse" {
         left_handed enabled
         # tap enabled
         natural_scroll enabled
@@ -197,23 +207,24 @@ output eDP-1 bg $HOME/dotfiles/picture/rust-rust.png fill
 # Workspaces:
 #
     # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
+    bindsym $mod+1 workspace 1-Clutter
+    bindsym $mod+2 workspace 2-Consciousness
+
+    bindsym $mod+3 workspace 3-CS
+    bindsym $mod+4 workspace 4-Company
+    bindsym $mod+5 workspace 5-Enjoy
+    bindsym $mod+6 workspace 6-Communicate
     bindsym $mod+7 workspace number 7
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
+    bindsym $mod+Shift+1 move container to workspace 1-Clutter
+    bindsym $mod+Shift+2 move container to workspace 2-Consciousness
+    bindsym $mod+Shift+3 move container to workspace 3-CS
+    bindsym $mod+Shift+4 move container to workspace 4-Company
+    bindsym $mod+Shift+5 move container to workspace 5-Enjoy
+    bindsym $mod+Shift+6 move container to workspace 6-Communicate
     bindsym $mod+Shift+7 move container to workspace number 7
     bindsym $mod+Shift+8 move container to workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9
@@ -285,10 +296,8 @@ bindsym $mod+r mode "resize"
 # my bind keys
 #
     # some of my binds
-    # bindsym ctrl+g exec QT_QPA_PLATFORM=xcb goldendict --floating_mode
-    bindsym ctrl+g exec QT_QPA_PLATFORM=xcb goldendict @DEFAULT_SINK@  toggle
-    # for_window [name="About GoldenDict"] floating enable
-    # bindsym ctrl+g exec --init='mark A' goldendict
+    bindsym ctrl+g exec QT_QPA_PLATFORM=xcb goldendict
+    # bindsym ctrl+g exec firefox https://ctext.org/zhs
 
     # volume controls
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -335,7 +344,10 @@ bar {
     # swaybar_command polybar
 }
   # Auto float apps
-    # for_window [app_id="GoldenDict"] floating enable
+    for_window [app_id="org.gnome.Nautilus"] floating enable
+    for_window [app_id="^xpad$"] floating enable
     for_window [class="^GoldenDict$"] floating enable
+    # for_window [class="netease-cloud-music"] floating enable
+    for_window [class="tanpopo"] floating enable
     # for_window [title="Firefox - Sharing Indicator"] floating enable
 include /etc/sway/config.d/*
