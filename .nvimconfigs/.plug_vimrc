@@ -1,5 +1,14 @@
 "插件：translator
 " let g:translator_proxy_url = 'socks5://127.0.0.1:1080'
+" 设置engines:Available: 'bing', 'google', 'haici', 'iciba'(expired), 'sdcv', 'trans', 'youdao'
+let g:translator_default_engines = ['bing']
+" 设置翻译语言
+let g:translator_target_language = 'zh'
+let g:translator_history_enable = v:true
+" 设置窗口样式popup，preview
+let g:translator_window_type = 'popup'
+let g:translator_window_max_width = 0.9
+let g:translator_window_max_height = 0.9
 " Echo translation in the cmdline
 " nmap <silent> <Leader>t <Plug>Translate
 " vmap <silent> <Leader>t <Plug>TranslateV
