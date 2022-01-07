@@ -1,6 +1,6 @@
 "------------插件安装-------------------
 call plug#begin('~/.config/nvim/plugged')
-" Plug 'neovim/nvim-lspconfig'
+Plug 'neovim/nvim-lspconfig'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
 
@@ -47,6 +47,8 @@ Plug 'makerj/vim-pdf'
 Plug 'kana/vim-fakeclip'
 " Plug 'plasticboy/vim-markdown'
 " Plug 'junegunn/limelight.vim'
+Plug 'tpope/vim-haml'
+Plug 'gko/vim-coloresque'
 "主题
 Plug 'w0ng/vim-hybrid'
 Plug 'morhetz/gruvbox'

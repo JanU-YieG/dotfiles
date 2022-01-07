@@ -34,6 +34,7 @@ ln -sr ./.tmux.conf $HOME/.tmux.conf
 ln -sr ./.profile $HOME/.profile
 # others
 ln -sr ./shell_bins/vimman.sh $HOME/bin/vimman
+ln -sr ./shell_bins/evince-open.sh $HOME/bin/evince-open
 
 #####sway######
 if [ ! -d "$HOME/.config/sway" ]; then
