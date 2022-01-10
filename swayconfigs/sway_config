@@ -333,7 +333,8 @@ bindsym $mod+r mode "resize"
     bindsym XF86Music exec netease-cloud-music
     bindsym Print exec grim $HOME/screenshots/$(date +'%s_grim.png')
 
-    bindsym $mod+m exec swaylock -c '000000'
+    # bindsym $mod+m exec swaylock -c '000000'
+    bindsym $mod+m exec swaylock -i $HOME/dotfiles/picture/mingdao.jpg
 
     # bindsym $mod+d exec bemenu-run
     bindsym $mod+d exec rofi -show combi -combi-modi "window,run,ssh" -modi combi

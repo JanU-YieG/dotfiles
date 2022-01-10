@@ -167,7 +167,7 @@ inoremap <C-f> <Right>
 inoremap <C-e> <Esc>$a
 inoremap <C-l> <Esc>gg0vG$di
 inoremap <C-k> <Right><Esc>d$a
-inoremap <C-w> <Esc>vbxi
+inoremap <C-w> <Esc>vbxa
 "tnux中连续按两次c-a就可以到行首同时tmux配置中加bind C-a send-prefix
 inoremap <C-a> <Esc>^i
 inoremap <C-d>d <Esc>^v$yo<C-r>0
