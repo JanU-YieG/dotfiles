@@ -61,7 +61,8 @@ Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 call plug#end()
 
-source $HOME/.config/nvim/.plug_vimrc
 source $HOME/.config/nvim/.custom_vimrc
+source $HOME/.config/nvim/.plug_vimrc
+source $HOME/.config/nvim/.other_vimrc
 " 控制透明--且要加在colorscheme后面
 hi Normal ctermfg=252 ctermbg=none
