@@ -279,3 +279,20 @@ let g:fakeclip_provide_clipboard_key_mappings = !empty($WAYLAND_DISPLAY)
 " Plug 'godlygeek/tabular'
 let g:tabular_loaded = 1
 vnoremap <Leader>l :Tabularize /
+
+" Plug 'othree/html5'
+" Disable event-handler attributes support:
+
+let g:html5_event_handler_attributes_complete = 1
+
+" Disable RDFa attributes support:
+
+let g:html5_rdfa_attributes_complete = 1
+
+" Disable microdata attributes support:
+
+let g:html5_microdata_attributes_complete = 1
+
+" Disable WAI-ARIA attribute support:
+
+let g:html5_aria_attributes_complete = 1

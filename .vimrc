@@ -49,6 +49,8 @@ Plug 'kana/vim-fakeclip'
 " Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-haml'
 Plug 'gko/vim-coloresque'
+" Plug 'mattn/emmet-vim'
+" Plug 'othree/html5.vim'
 "主题
 Plug 'w0ng/vim-hybrid'
 Plug 'morhetz/gruvbox'
