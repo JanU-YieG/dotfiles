@@ -296,3 +296,28 @@ let g:html5_microdata_attributes_complete = 1
 " Disable WAI-ARIA attribute support:
 
 let g:html5_aria_attributes_complete = 1
+
+" Plug 'mattn/emmet-vim'
+" Tutorial for Emmet.vim(https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL)
+" 快捷键：<c+y>,
+" enable in different mode
+" let g:user_emmet_mode='n'    "only enable normal mode functions.
+" let g:user_emmet_mode='inv'  "enable all functions, which is equal to
+let g:user_emmet_mode='a'    "enable all function in all mode.
+" Enable just for html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+" Redefine trigger key
+" let g:user_emmet_leader_key='<C-Z>'
+" Redefine emmet leader key
+" let g:user_emmet_leader_key=’,’
+
+" Plug 'SirVer/ultisnips'
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "./edges/snippets"]
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger='<tab>'
+" shortcut to go to next position
+let g:UltiSnipsJumpForwardTrigger='<c-j>'
+" shortcut to go to previous position
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'

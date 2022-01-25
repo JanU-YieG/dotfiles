@@ -2,7 +2,6 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'godlygeek/tabular'
-Plug 'tpope/vim-surround'
 
 Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
@@ -41,7 +40,6 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'godlygeek/tabular'
-Plug 'honza/vim-snippets'
 Plug 'voldikss/vim-translator'
 Plug 'makerj/vim-pdf'
 Plug 'kana/vim-fakeclip'
@@ -55,6 +53,12 @@ Plug 'gko/vim-coloresque'
 Plug 'w0ng/vim-hybrid'
 Plug 'morhetz/gruvbox'
 Plug 'rafi/awesome-vim-colorschemes'
+" 前端
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-surround'
+" 代码片段
+Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
 call plug#end()
 
 source $HOME/.config/nvim/.custom_vimrc
