@@ -46,7 +46,6 @@ Plug 'kana/vim-fakeclip'
 " Plug 'plasticboy/vim-markdown'
 " Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-haml'
-Plug 'gko/vim-coloresque'
 " Plug 'mattn/emmet-vim'
 " Plug 'othree/html5.vim'
 "主题
@@ -56,6 +55,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 " 前端
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
+Plug 'leafoftree/vim-vue-plugin'
 " 代码片段
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'

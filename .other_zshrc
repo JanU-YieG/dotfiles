@@ -35,6 +35,7 @@ export XMODIFIERS DEFAULT=@im=fcitx5
 #####################################
 
 [[ $(command -v neofetch) ]] && neofetch
+# docker stop $(docker ps -q)
 ########## some aliases ##########
 # my-recent-study-book
 alias my-rsb="vim $HOME/git-repositories/books-tools/it-books/my-linux-study/about-shell/bash-pocket-reference_2ndedition.pdf"
@@ -93,14 +94,15 @@ fi
 # exec nohup fcitx5 &
 ###############sway##############
 ##export WAYLAND_DISPLAY=alacritty
-if [ "$(tty)" = "/dev/tty1" ] && [ "$USER" = "borer" ]; then
-   exec sway
-   exit 0
-fi
+# if [ "$(tty)" = "/dev/tty1" ] && [ "$USER" = "borer" ]; then
+   # #exec sway
+   # exec startxfce4
+   # exit 0
+# fi
 
 ##############xfce##############
 # if [ "$(tty)" = "/dev/tty2" ] && [ "$USER" = "janu" ]; then
-    # sudo lightdm
-    # exit 0
+   # exec startxfce4
+   # exit 0
 # fi
 
